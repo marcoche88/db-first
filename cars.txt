@@ -1,0 +1,35 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario.
+Scrivete la struttura della tabella "auto" con le varie proprietà, tipi di dato e attributi in un file .txt e pushatelo sulla vostra repo.
+
+AUTOMOBILE
+--------------
+id - INT - PRIMARY_KEY (NOT NULL, UNIQUE, AUTO_INCREMENT)
+marca - VARCHAR(50) - NOT NULL
+modello - VARCHAR(50) - NOT NULL
+versione - VARCHAR(50) - NULL 
+descrizione_generale - TEXT - NULL
+immagini - VARCHAR - NULL
+colore_esterno - VARCHAR(50) - NOT NULL
+tipo_vernice - BOOL (TINYINT(1)) - NOT NULL  (metallizzata o non metallizzata)
+rivestimento_interno - VARCHAR(50) - NOT NULL
+colore_interno - VARCHAR(50) - NOT NULL
+tipo_carrozzeria - VARCHAR(30) - NULL  (berlina, city car, monovolume, ...)
+numero_porte - TINYINT(1) - NOT NULL
+numero_posti - TINYINT(2) - NOT NULL
+tipo_carburante - VARCHAR(30) - NOT NULL
+classe_emissione - VARCHAR(10) - NULL  (euro1, euro2, ...)
+prezzo - FLOAT(8,2) - NOT NULL
+km_percorsi - MEDIUMINT - NOT NULL
+tipo_di_usato - VARCHAR(30) - NULL  (km0, aziendale, ...)
+anno_produzione - YEAR - NOT NULL
+data_immatricolazione - DATE - NULL
+numero_precedenti_proprietari - TINYINT(2) - NULL
+cavalli - SMALLINT - NOT NULL
+tipo_cambio - VARCHAR(20) - NULL
+marce - TINYINT(1) - NULL
+cilindrata - SMALLINT - NOT NULL
+cilindri - TINYINT(1) - NULL
+peso - SMALLINT - NULL
+città_provenienza - VARCHAR(50) - NULL
+
+
