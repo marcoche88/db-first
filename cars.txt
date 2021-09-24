@@ -10,7 +10,6 @@ versione - VARCHAR(50) - NULL
 descrizione_generale - TEXT - NULL
 immagini - VARCHAR - NULL
 colore_esterno - VARCHAR(50) - NOT NULL
-tipo_vernice - BOOL (TINYINT(1)) - NOT NULL  (metallizzata o non metallizzata)
 rivestimento_interno - VARCHAR(50) - NOT NULL
 colore_interno - VARCHAR(50) - NOT NULL
 tipo_carrozzeria - VARCHAR(30) - NULL  (berlina, city car, monovolume, ...)
@@ -31,5 +30,38 @@ cilindrata - SMALLINT - NOT NULL
 cilindri - TINYINT(1) - NULL
 peso - SMALLINT - NULL
 città_provenienza - VARCHAR(50) - NULL
+
+
+CAR
+-----------
+id - INT - PRIMARY_KEY (NOT NULL, UNIQUE, AUTO_INCREMENT)
+brand - VARCHAR(50) - NOT NULL
+model - VARCHAR(50) - NOT NULL
+variation - VARCHAR(50) - NULL
+description - TEXT - NULL
+images - VARCHAR - NULL
+outer_color - VARCHAR(50) - NOT NULL 
+inner_upholstery - VARCHAR(50) - NOT NULL
+inner_color - VARCHAR(50) - NOT NULL
+car_body_type - VARCHAR(30) - NULL
+car_doors_number - TINYINT(1) - NOT NULL
+seats_number - TINYINT(2) - NOT NULL
+fuel_type - VARCHAR(30) - NOT NULL
+emission_class - VARCHAR(10) - NULL
+price - FLOAT(8,2) - NOT NULL
+mileage - MEDIUMINT - NOT NULL
+used_type - VARCHAR(30) - NULL
+production_year - YEAR - NOT NULL
+registration_date - DATE - NULL
+previous_owners_number - TINYINT(2) - NULL
+horsepower - SMALLINT - NOT NULL
+gearshift_type - VARCHAR(20) - NULL
+gear - TINYINT(1) - NULL
+engine_size - SMALLINT - NOT NULL
+cylinders - TINYINT(1) - NULL
+weight - SMALLINT - NULL
+origin_city - VARCHAR(50) - NULL
+
+
 
 
